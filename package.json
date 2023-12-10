@@ -3,7 +3,7 @@
   "license": "MIT",
   "scripts": {
     "build": "pnpm exec nx run-many --target=build --parallel",
-    "dev": "pnpm exec nx run-many --target=dev --parallel --output-style stream",
+    "dev": "pnpm exec nx watch --all -- nx run \\$NX_PROJECT_NAME:build",
     "lint": "pnpm exec nx run-many --target=lint --parallel"
   },
   "private": true,
