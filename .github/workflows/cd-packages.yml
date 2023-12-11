@@ -37,20 +37,13 @@ jobs:
         id: changesets
         with:
           version: pnpm version
-          publish: pnpm tag
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NPM_TOKEN:  ${{secrets.NPM_TOKEN}}
     outputs:
       ref: ${{ github.ref }}
       published: ${{ steps.changesets.outputs.published }}
-
-  deliver-to-registries:
-    name: Delvier to package registries
-    uses: ./.github/workflows/cd-registries.yml
-    needs: publish-packages
-    with:
-      ref: ${{ needs.publish-packages.outputs.ref }}
-    if: ${{ needs.publish-packages.outputs.published }}
 
 #  deliver-to-static-file-host:
 #    name: Delvier to Static File Host
