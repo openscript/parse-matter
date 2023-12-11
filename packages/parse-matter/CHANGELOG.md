@@ -1,5 +1,11 @@
 # parse-matter
 
+## 0.0.8
+
+### Patch Changes
+
+- a574f4e: Enhance workflow
+
 ## 0.0.7
 
 ### Patch Changes
