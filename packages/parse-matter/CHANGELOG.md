@@ -1,5 +1,11 @@
 # parse-matter
 
+## 0.0.17
+
+### Patch Changes
+
+- 6790efa: Enhance changeset
+
 ## 0.0.16
 
 ### Patch Changes
