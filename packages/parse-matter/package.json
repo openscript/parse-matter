@@ -3,6 +3,7 @@
   "version": "0.0.3",
   "type": "module",
   "dependencies": {},
+  "scripts": {},
   "main": "./index.js",
   "typings": "./index.d.ts",
   "publishConfig": {
