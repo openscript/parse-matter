@@ -24,7 +24,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
           cache: pnpm
 
       - name: Install dependencies
@@ -33,26 +32,20 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
+      - name: Set NPM Registry
+        run: pnpm config set '//registry.npmjs.org/:_authToken' "${NODE_AUTH_TOKEN}"
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: Publish packages on NPM
         run: pnpm publish -r -- --no-git-checks
+
+      - name: Set Github NPM Registry
+        run: pnpm config set '//npm.pkg.github.com/:_authToken' "${NODE_AUTH_TOKEN}"
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Configure node for Github NPM as registry
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@openscript'
-
-      - name: Authenticate with the GitHub Package Registry
-        run:
-          echo "//npm.pkg.github.com:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
       - name: Publish packages on Github NPM registry
-        run: pnpm publish -r -- --no-git-checks
+        run: pnpm publish -r -- --no-git-checks --scope @openscript
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
