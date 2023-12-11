@@ -1,5 +1,11 @@
 # parse-matter
 
+## 0.0.21
+
+### Patch Changes
+
+- b737cd8: Enhance workflow
+
 ## 0.0.20
 
 ### Patch Changes
