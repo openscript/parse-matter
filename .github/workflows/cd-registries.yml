@@ -33,6 +33,10 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Authenticate with the NPM Registry
+        run:
+          echo "//registry.npmjs.org:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
       - name: Publish packages on NPM
         run: pnpm publish -r -- --no-git-checks
         env:
@@ -43,6 +47,7 @@ jobs:
         with:
           node-version: '20.x'
           registry-url: 'https://npm.pkg.github.com'
+          scope: '@openscript'
 
       - name: Authenticate with the GitHub Package Registry
         run:
