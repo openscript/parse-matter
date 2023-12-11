@@ -7,6 +7,7 @@
   "main": "./index.js",
   "typings": "./index.d.ts",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "../../dist/packages/parse-matter"
   }
 }
