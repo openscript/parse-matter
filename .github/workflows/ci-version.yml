@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  version:
-    name: Version
+  version-packages:
+    name: Version packages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

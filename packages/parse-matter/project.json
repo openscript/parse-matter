@@ -11,6 +11,10 @@
         "outputPath": "dist/packages/parse-matter"
       }
     },
+    "prepare": {
+      "dependsOn": ["build"],
+      "command": "cp packages/parse-matter/README.md dist/packages/parse-matter"
+    },
     "test": {
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],
