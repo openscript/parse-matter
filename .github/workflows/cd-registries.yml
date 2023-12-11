@@ -30,7 +30,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Prepare packages
-        run: pnpm prepare
+        run: pnpm prepublish
 
       - name: Set registry
         run: "echo \"//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}\" >> .npmrc"
