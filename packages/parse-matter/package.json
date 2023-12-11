@@ -4,5 +4,8 @@
   "type": "module",
   "dependencies": {},
   "main": "./index.js",
-  "typings": "./index.d.ts"
+  "typings": "./index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  }
 }
