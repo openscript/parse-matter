@@ -32,7 +32,10 @@ jobs:
       - name: Prepare packages
         run: pnpm prepare
 
-      - name: Publish packages on NPM
-        run: pnpm publish -r --no-git-checks
+      - name: Set registry
+        run: "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN} >> .npmrc"
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+      - name: Publish packages on NPM
+        run: pnpm publish -r --no-git-checks
