@@ -72,7 +72,8 @@ importers:
         specifier: ~1.0.1
         version: 1.0.1(@types/node@20.10.3)(@vitest/ui@1.0.1)
 
-  packages/parse-matter: {}
+  packages/parse-matter:
+    publishDirectory: ../../dist/packages/parse-matter
 
 packages:
 
