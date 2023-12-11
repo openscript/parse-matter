@@ -5,6 +5,7 @@
     "build": "pnpm exec nx run-many --target=build --parallel",
     "dev": "pnpm exec nx watch --all -- nx run \\$NX_PROJECT_NAME:build",
     "lint": "pnpm exec nx run-many --target=lint --parallel",
+    "publish": "pnpm exec ",
     "version": "changeset version",
     "release": "changeset publish"
   },
