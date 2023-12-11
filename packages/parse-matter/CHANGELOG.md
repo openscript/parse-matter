@@ -1,5 +1,11 @@
 # parse-matter
 
+## 0.0.4
+
+### Patch Changes
+
+- 18a1f8d: Publish to multiple registries
+
 ## 0.0.3
 
 ### Patch Changes
