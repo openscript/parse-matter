@@ -30,7 +30,7 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm add -g @changesets/cli@2.27.1
 
       - name: Publish
         uses: changesets/action@v1
@@ -45,10 +45,18 @@ jobs:
       ref: ${{ github.ref }}
       published: ${{ steps.changesets.outputs.published }}
 
+  deliver-to-registries:
+    name: Delvier to package registries
+    uses: ./.github/workflows/cd-registries.yml
+    needs: publish-packages
+    with:
+      ref: ${{ needs.publish-packages.outputs.ref }}
+    if: ${{ needs.publish-packages.outputs.published }}
+
 #  deliver-to-static-file-host:
 #    name: Delvier to Static File Host
 #    uses: ./.github/workflows/cd-static-file-host.yml
-#    needs: publish
+#    needs: publish-packages
 #    with:
-#      ref: ${{ needs.publish.outputs.ref }}
-#    if: ${{ needs.publish.outputs.published }}
+#      ref: ${{ needs.publish-packages.outputs.ref }}
+#    if: ${{ needs.publish-packages.outputs.published }}

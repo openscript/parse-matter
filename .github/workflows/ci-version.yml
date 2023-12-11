@@ -24,7 +24,7 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm add -g @changesets/cli@2.27.1
 
       - name: Create Release Pull Request
         uses: changesets/action@v1
