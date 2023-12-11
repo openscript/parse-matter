@@ -1,4 +1,4 @@
-name: Publish Packages
+name: Publish packages
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ on:
 jobs:
   publish-packages:
     if: github.event.pull_request.merged == true && github.head_ref == 'changeset-release/main'
-    name: Publish Packages
+    name: Publish packages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -44,8 +44,8 @@ jobs:
       ref: ${{ github.ref }}
       published: ${{ steps.changesets.outputs.published }}
 
-  deliver-to-registries:
-    name: Delvier to package registries
+  deliver-packages:
+    name: Delvier packages
     uses: ./.github/workflows/cd-registries.yml
     needs: publish-packages
     with:
