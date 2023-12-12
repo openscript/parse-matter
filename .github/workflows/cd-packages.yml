@@ -50,6 +50,7 @@ jobs:
     needs: publish-packages
     with:
       ref: ${{ needs.publish-packages.outputs.ref }}
+    secrets: inherit
     if: ${{ needs.publish-packages.outputs.published }}
 
 #  deliver-to-static-file-host:
