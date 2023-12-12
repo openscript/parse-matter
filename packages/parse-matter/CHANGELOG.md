@@ -1,5 +1,11 @@
 # parse-matter
 
+## 0.0.23
+
+### Patch Changes
+
+- e2806cd: Enhance workflow
+
 ## 0.0.22
 
 ### Patch Changes
