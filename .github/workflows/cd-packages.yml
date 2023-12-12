@@ -45,7 +45,7 @@ jobs:
       published: ${{ steps.changesets.outputs.published }}
 
   deliver-packages:
-    name: Delvier packages
+    name: Deliver packages
     uses: ./.github/workflows/cd-registries.yml
     needs: publish-packages
     with:
