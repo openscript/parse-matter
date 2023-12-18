@@ -44,6 +44,9 @@ export default defineConfig({
       dir: '../../node_modules/.vitest',
     },
     environment: 'node',
+    coverage: {
+      reportsDirectory: '../../coverage/packages/parse-matter'
+    },
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   },
 });
