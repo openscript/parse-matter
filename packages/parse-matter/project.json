@@ -19,7 +19,8 @@
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "reportsDirectory": "../../coverage/packages/parse-matter"
+        "reportsDirectory": "../../coverage/packages/parse-matter",
+        "coverage": true
       }
     },
     "lint": {

@@ -36,5 +36,8 @@ jobs:
       - name: Test
         run: pnpm test
 
+      - name: Submit coverage
+        uses: codecov/codecov-action@v3
+
       - name: Build
         run: pnpm build
