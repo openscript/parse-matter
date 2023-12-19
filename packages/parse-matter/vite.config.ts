@@ -47,6 +47,7 @@ export default defineConfig({
     coverage: {
       reportsDirectory: '../../coverage/packages/parse-matter'
     },
+    reporters: ['verbose'],
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   },
 });
