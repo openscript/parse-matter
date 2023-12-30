@@ -53,8 +53,19 @@ describe('parseMatter', () => {
   it('should work with a single frontmatter tag', () => {
     expect(parseMatter(exampleSingleTags)).toMatchInlineSnapshot(`
       {
-        "content": "",
-        "data": "Example data",
+        "content": "# Frontmatter
+
+      Example data",
+        "data": {
+          "some-array": [
+            "one",
+            "two",
+            "three",
+          ],
+          "some-boolean": true,
+          "some-number": 42,
+          "some-string": "string",
+        },
       }
     `);
   });

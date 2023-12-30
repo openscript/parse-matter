@@ -18,7 +18,8 @@
           "run-many",
           "--target=test",
           "--parallel",
-          "--output-style=stream"
+          "--output-style=stream",
+          "--skip-nx-cache"
       ],
       "outputCapture": "std"
     }
