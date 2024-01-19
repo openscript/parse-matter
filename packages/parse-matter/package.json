@@ -2,7 +2,9 @@
   "name": "parse-matter",
   "version": "0.0.25",
   "type": "module",
-  "dependencies": {},
+  "dependencies": {
+    "yaml": "^2.3.4"
+  },
   "scripts": {},
   "main": "./index.js",
   "typings": "./index.d.ts",
