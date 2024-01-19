@@ -1,5 +1,11 @@
 # parse-matter
 
+## 0.1.0
+
+### Minor Changes
+
+- eb87b43: Implement frontmatter parsing
+
 ## 0.0.25
 
 ### Patch Changes
