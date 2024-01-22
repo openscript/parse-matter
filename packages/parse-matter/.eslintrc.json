@@ -23,7 +23,7 @@
           {
             "ignoredFiles": ["{projectRoot}/vite.config.{js,ts,mjs,mts}"],
             "includeTransitiveDependencies": true,
-            "ignoredDependencies": ["vitest"]
+            "ignoredDependencies": ["vitest", "yaml"]
           }
         ]
       }
