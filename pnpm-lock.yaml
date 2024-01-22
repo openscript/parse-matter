@@ -73,6 +73,8 @@ importers:
         version: 2.3.4
     publishDirectory: ../../dist/packages/parse-matter
 
+  packages/vite-plugin-parse-matter: {}
+
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:

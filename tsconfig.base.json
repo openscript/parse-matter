@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "parse-matter": ["packages/parse-matter/src/index.ts"]
+      "parse-matter": ["packages/parse-matter/src/index.ts"],
+      "vite-plugin-parse-matter": [
+        "packages/vite-plugin-parse-matter/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
