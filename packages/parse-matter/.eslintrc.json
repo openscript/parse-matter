@@ -22,7 +22,8 @@
           "error",
           {
             "ignoredFiles": ["{projectRoot}/vite.config.{js,ts,mjs,mts}"],
-            "ignoredDependencies": ["yaml", "vitest"]
+            "includeTransitiveDependencies": true,
+            "ignoredDependencies": ["vitest"]
           }
         ]
       }
