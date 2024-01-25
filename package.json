@@ -18,9 +18,9 @@
     "@nx/eslint-plugin": "^17.2.8",
     "@nx/js": "^17.2.8",
     "@nx/vite": "17.2.8",
-    "@types/node": "20.11.5",
-    "@typescript-eslint/eslint-plugin": "^6.19.0",
-    "@typescript-eslint/parser": "^6.19.0",
+    "@types/node": "20.11.6",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
     "@vitest/coverage-v8": "~1.2.1",
     "@vitest/ui": "~1.2.1",
     "eslint": "~8.56.0",
@@ -30,7 +30,7 @@
     "tslib": "^2.6.2",
     "typescript": "~5.3.3",
     "vite": "~5.0.12",
-    "vite-plugin-dts": "~3.7.1",
+    "vite-plugin-dts": "~3.7.2",
     "vitest": "~1.2.1"
   }
 }
