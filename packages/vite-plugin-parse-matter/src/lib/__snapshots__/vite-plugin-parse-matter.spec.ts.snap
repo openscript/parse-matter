@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`vitePluginParseMatter > should work 1`] = `
+{
+  "load": [Function],
+  "name": "parse-matter",
+  "resolveId": [Function],
+}
+`;
