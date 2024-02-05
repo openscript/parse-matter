@@ -66,7 +66,11 @@ importers:
         specifier: ~1.2.2
         version: 1.2.2(@types/node@20.11.16)(@vitest/ui@1.2.2)
 
-  examples/demo: {}
+  examples/demo:
+    dependencies:
+      vite-plugin-parse-matter:
+        specifier: workspace:*
+        version: link:../../packages/vite-plugin-parse-matter
 
   packages/parse-matter:
     dependencies:
@@ -75,7 +79,11 @@ importers:
         version: 2.3.4
     publishDirectory: ../../dist/packages/parse-matter
 
-  packages/vite-plugin-parse-matter: {}
+  packages/vite-plugin-parse-matter:
+    dependencies:
+      parse-matter:
+        specifier: workspace:*
+        version: link:../../dist/packages/parse-matter
 
 packages:
 

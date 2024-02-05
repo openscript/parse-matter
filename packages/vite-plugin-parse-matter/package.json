@@ -1,7 +1,9 @@
 {
   "name": "vite-plugin-parse-matter",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "parse-matter": "workspace:*"
+  },
   "main": "./index.js",
   "module": "./index.mjs",
   "typings": "./index.d.ts"
