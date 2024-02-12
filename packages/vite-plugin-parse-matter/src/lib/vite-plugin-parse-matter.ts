@@ -1,20 +1,20 @@
-export function vitePluginParseMatter() {
-  const virtualModuleId = 'virtual:parse-matter';
-  const resolvedVirtualModuleId = '\0' + virtualModuleId;
+import { Plugin } from 'vite';
+import { parseMatter as parseMatterImplementation } from 'parse-matter';
 
+export function parseMatter(): Plugin {
   return {
     name: 'parse-matter',
-    resolveId(id: string) {
-      if (id === virtualModuleId) {
-        return resolvedVirtualModuleId;
+    transform: (src, id) => {
+      if (!id.endsWith('.md')) {
+        return;
       }
-      return undefined;
-    },
-    load(id: string) {
-      if (id === resolvedVirtualModuleId) {
-        return `export const msg = "from virtual module"`;
+
+      const parsedFrontmatter = parseMatterImplementation(src);
+
+      return {
+        code: `export default ${JSON.stringify(parsedFrontmatter)};`,
+        map: null
       }
-      return undefined;
-    },
+    }
   };
 }

@@ -1,5 +1,5 @@
-import { vitePluginParseMatter } from './lib/vite-plugin-parse-matter';
+import { parseMatter } from './lib/vite-plugin-parse-matter';
 
-export default vitePluginParseMatter;
+export default parseMatter;
 export * from './lib/vite-plugin-parse-matter';
 

@@ -40,7 +40,7 @@ export default defineConfig({
     },
     rollupOptions: {
       // External packages that should not be bundled into your library.
-      external: [],
+      external: ['parse-matter'],
     },
   },
 
@@ -51,7 +51,7 @@ export default defineConfig({
     },
     environment: 'node',
     coverage: {
-      reportsDirectory: '../../coverage/packages/parse-matter'
+      reportsDirectory: '../../coverage/packages/vite-plugin-parse-matter'
     },
     reporters: ['verbose'],
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
