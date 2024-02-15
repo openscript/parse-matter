@@ -35,9 +35,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Change to version branch
-        run: git checkout changeset-release/main
-
       - name: Update lock file
         run: pnpm install --lockfile-only
 
