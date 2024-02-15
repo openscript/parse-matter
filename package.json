@@ -7,7 +7,7 @@
     "test": "pnpm exec nx run-many --target=test --parallel --output-style=stream --skip-nx-cache",
     "test:watch": "pnpm exec nx run-many --target=test --watch --parallel --output-style=stream",
     "prepublish": "pnpm exec nx run-many --target=prepare --parallel",
-    "version": "changeset version",
+    "version": "changeset version && pnpm install --lockfile-only",
     "tag": "changeset tag"
   },
   "private": true,
