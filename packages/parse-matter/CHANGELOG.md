@@ -1,5 +1,11 @@
 # parse-matter
 
+## 0.2.0
+
+### Minor Changes
+
+- 28cabe3: Add vite plugin
+
 ## 0.1.0
 
 ### Minor Changes
