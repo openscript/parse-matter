@@ -1,5 +1,5 @@
-import { data, content } from '../../assets/frontmatter.md';
+import markdown from '../../assets/frontmatter.md';
 
 export function returnMarkdown() {
-  return {data, content };
+  return markdown;
 }
