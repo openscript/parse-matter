@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`demo > should work 1`] = `
+{
+  "content": "# Fantastic
+
+Lorem",
+  "data": {
+    "published": true,
+    "title": "Fantastic",
+  },
+}
+`;

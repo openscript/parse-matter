@@ -1,0 +1,16 @@
+{
+  "name": "vite-plugin-parse-matter",
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "parse-matter": "^0.1.0",
+    "vite": "^5.1.1"
+  },
+  "scripts": {},
+  "main": "./index.js",
+  "typings": "./index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "directory": "../../dist/packages/vite-plugin-parse-matter"
+  }
+}
