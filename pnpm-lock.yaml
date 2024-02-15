@@ -7,6 +7,16 @@ settings:
 importers:
 
   .:
+    dependencies:
+      parse-matter:
+        specifier: workspace:*
+        version: link:dist/packages/parse-matter
+      vite-plugin-parse-matter:
+        specifier: workspace:*
+        version: link:dist/packages/vite-plugin-parse-matter
+      yaml:
+        specifier: ^2.3.4
+        version: 2.3.4
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.1
