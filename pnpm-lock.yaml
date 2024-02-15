@@ -88,7 +88,7 @@ importers:
         specifier: ^3.7.2
         version: 3.7.2(@types/node@20.11.17)(typescript@5.3.3)(vite@5.1.1)
       vite-plugin-parse-matter:
-        specifier: ^0.0.1
+        specifier: ^0.1.0
         version: link:../../dist/packages/vite-plugin-parse-matter
 
   packages/parse-matter:
@@ -101,7 +101,7 @@ importers:
   packages/vite-plugin-parse-matter:
     dependencies:
       parse-matter:
-        specifier: ^0.1.0
+        specifier: ^0.2.0
         version: link:../../dist/packages/parse-matter
       vite:
         specifier: ^5.1.1
