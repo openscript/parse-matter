@@ -1,5 +1,13 @@
 # demo
 
+## 0.1.1
+
+### Patch Changes
+
+- 5c237d1: Update lock file
+- Updated dependencies [a028822]
+  - vite-plugin-parse-matter@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes
