@@ -13,7 +13,7 @@
     },
     "prepare": {
       "dependsOn": ["build"],
-      "command": "cp packages/parse-matter/README.md dist/packages/parse-matter"
+      "command": "cp packages/vite-plugin-parse-matter/README.md dist/packages/vite-plugin-parse-matter"
     },
     "test": {
       "executor": "@nx/vite:test",
