@@ -11,11 +11,16 @@
         "outputPath": "dist/packages/vite-plugin-parse-matter"
       }
     },
+    "prepare": {
+      "dependsOn": ["build"],
+      "command": "cp packages/parse-matter/README.md dist/packages/parse-matter"
+    },
     "test": {
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "reportsDirectory": "../../coverage/packages/vite-plugin-parse-matter"
+        "reportsDirectory": "../../coverage/packages/vite-plugin-parse-matter",
+        "coverage": true
       }
     },
     "lint": {
