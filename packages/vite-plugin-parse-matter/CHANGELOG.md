@@ -1,5 +1,11 @@
 # vite-plugin-parse-matter
 
+## 0.2.0
+
+### Minor Changes
+
+- 6cd2384: Release vite plugin
+
 ## 0.1.1
 
 ### Patch Changes
