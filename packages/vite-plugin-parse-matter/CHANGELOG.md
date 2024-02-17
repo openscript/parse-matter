@@ -1,5 +1,11 @@
 # vite-plugin-parse-matter
 
+## 0.2.1
+
+### Patch Changes
+
+- debfc1d: Publish vite plugin
+
 ## 0.2.0
 
 ### Minor Changes
