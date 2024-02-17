@@ -1,5 +1,12 @@
 # demo
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies [6cd2384]
+  - vite-plugin-parse-matter@0.2.0
+
 ## 0.1.1
 
 ### Patch Changes
